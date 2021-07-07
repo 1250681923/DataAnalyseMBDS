@@ -1,0 +1,54 @@
+--ORACLE NoSQL DATABASE : PROGRAMMATION JAVA avec l''API 
+-----------------------------------------------------------------------------
+-- 1 : conception d’un record
+-----------------------------------------------------------------------------
+/*
+Soient les informations suivantes sur la structure d''opérateur mobile
+Concevoir les clés Majeures et les clés mineures ainsi que la valeur 
+correspondant à la structure d’un client :
+AGE 
+SEXE
+TAUX STRING,"
+SITUATIONFAMILIALE 
+NBENFANTSACHARGE
+DEUXIEMEVOITURE
+IMMATRICULATION
+
+*/
+
+-----------------------------------------------------------------------------
+-- 2 : Test de la classe java   
+-- afin de comprendre les bases du modèle Key/Value de la base NoSQL Oracle
+-----------------------------------------------------------------------------
+/*
+L’enjeu est de comprendre et valider les points suivants :
+Comment créer un handle pour écrire et lire des objets dans la base KVSTORE 
+(role des classes KVStore, KVStoreFactory et KVStoreConfig)
+Comment écrire un objet dans la base avec la function put de la classe KVStore
+Comment lire un objet dans la base avec la function get de la classe KVStore
+Comment fermer un handle vers la base kvstore
+*/
+-- Actions  par étape :
+-- Etape 1 :kvlite avec la commande suivante
+-- activation du serveur. si pas démarré
+java -Xmx256m -Xms256m -jar $KVHOME/lib/kvstore.jar kvlite
+
+-- Etape 2 : dossier du projet appelé nosql 
+-- Assurez vous que ce dossier soit disponible dans $MYTPHOME
+
+export MYTPHOME=/home/ZHAO/Projet
+
+
+Sous MYTPHOME :
+$MYTPHOME/nosql/ConcessionnaireBase.java
+------(permission denied problme : https://www.jianshu.com/p/958bd06fdfb8)
+------Su root
+
+-- Etape 3 : Compiler et executer la classe 
+
+-- compilation
+
+javac -g -cp $KVHOME/lib/kvclient.jar:$MYTPHOME/nosql $MYTPHOME/nosql/ConcessionnaireBase.java 
+
+-- Exécution
+java -Xmx256m -Xms256m  -cp $KVHOME/lib/kvclient.jar:$MYTPHOME/nosql concessionnaireBase.ConcessionnaireBase
