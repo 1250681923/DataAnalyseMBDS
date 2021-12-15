@@ -1,0 +1,21 @@
+age,sexe,taux,situationFamiliale,nbEnfantsAcharge,deuxiemeVoiture
+21,F,1396,celibataire,0,FALSE
+35,M,223,celibataire,0,FALSE
+48,M,401,celibataire,0,FALSE
+26,F,420,En Couple,3,TRUE
+80,M,530,En Couple,3,FALSE
+27,F,153,En Couple,2,FALSE
+59,F,572,En Couple,2,FALSE
+43,F,431,celibataire,0,FALSE
+64,M,559,celibataire,0,FALSE
+22,M,154,En Couple,1,FALSE
+79,F,981,En Couple,2,FALSE
+55,M,588,celibataire,0,FALSE
+19,F,212,celibataire,0,FALSE
+34,F,1112,En Couple,0,FALSE
+60,M,524,En Couple,0,TRUE
+22,M,411,En Couple,3,TRUE
+58,M,1192,En Couple,0,FALSE
+54,F,452,En Couple,3,TRUE
+35,M,589,celibataire,0,FALSE
+59,M,748,En Couple,0,TRUE
